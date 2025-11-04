@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiplication Table</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splash">
+    <h1>Multiplication<br>Table</h1>
+    <p>Made with ❤️ by Suresh</p>
+    <div class="loader"></div>
+  </div>
+
+  <!-- Main Menu -->
+  <div id="app" class="hidden">
+    <header>
+      <h1>Multiplication Table</h1>
+      <button id="settingsBtn">⚙️</button>
+    </header>
+
+    <div class="menu">
+      <button class="card training">📘 Training</button>
+      <button class="card learn">🧠 Learn Tables</button>
+      <button class="card test">🧮 Start Test</button>
+    </div>
+
+    <div id="content"></div>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <audio id="correctSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_b3f829a3c2.mp3" preload="auto"></audio>
+  <audio id="wrongSound" src="https://cdn.pixabay.com/download/audio/2021/09/16/audio_5c1b16f84f.mp3" preload="auto"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
